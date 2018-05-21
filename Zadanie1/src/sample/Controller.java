@@ -3,10 +3,11 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -22,6 +23,8 @@ public class Controller implements Initializable {
     private TextArea showPrime;
     @FXML
     private Primes primes = new Primes();
+    @FXML
+    private AnchorPane background;
 
 
     @FXML
@@ -78,8 +81,7 @@ public class Controller implements Initializable {
             alert.setContentText("Try again!");
             alert.showAndWait();
 
-        }
-        catch (ArrayIndexOutOfBoundsException ex) {
+        } catch (ArrayIndexOutOfBoundsException ex) {
             Alert alert = new Alert(AlertType.ERROR);
             alert.setTitle("ERROR");
             alert.setHeaderText(" Out of range");
@@ -87,6 +89,18 @@ public class Controller implements Initializable {
             alert.showAndWait();
 
         }
+
+    }
+
+    @FXML
+    private void Exit(ActionEvent event) {
+        System.exit(1);
+
+    }
+
+    @FXML
+    private void Nightmode(ActionEvent event) {
+        background.setStyle("-fx-background-color: grey");
 
     }
 
