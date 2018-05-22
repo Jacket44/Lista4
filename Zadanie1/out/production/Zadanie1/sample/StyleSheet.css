@@ -1,7 +1,12 @@
-
-
 #button1 {
- -fx-background-color: gold;
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-border: none;
+    -fx-color: white;
+
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-family: font;
 }
 
 #button2 {
@@ -12,11 +17,13 @@
     -fx-text-align: center;
     -fx-text-decoration: none;
     -fx-display: inline-block;
-    -fx-font-size: 16px;
+    -fx-font-family: font;
 }
 
-
-
 #background {
-    
+    -fx-background-color: #FFAADD;
+}
+
+.font {
+    font: bold italic 10pt "Arial";
 }

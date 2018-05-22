@@ -1,3 +1,8 @@
+/* Javafx Prime number calculator
+   made by Mateusz Trzeciak, 2018
+ */
+
+
 package sample;
 
 import javafx.application.Application;
@@ -15,7 +20,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("oldSample.fxml"));
         primaryStage.setTitle("Prime counter");
         primaryStage.setScene(new Scene(root));
 
