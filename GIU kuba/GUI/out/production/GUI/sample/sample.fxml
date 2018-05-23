@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane1" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label fx:id="ad1" layoutX="98.0" layoutY="195.0" prefHeight="21.0" prefWidth="162.0" style="-fx-text-fill: black;" text="Podaj zakres:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="ad2" layoutX="98.0" layoutY="262.0" style="-fx-text-fill: black;" text="Podai ilosc argumentow:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="zakres" layoutX="381.0" layoutY="193.0" />
+        <TextField fx:id="args" layoutX="381.0" layoutY="260.0" />
+        <Button fx:id="przycisk" layoutX="508.0" layoutY="375.0" mnemonicParsing="false" onAction="#akcja" text="Dalej" />
+        <Label fx:id="label" layoutX="98.0" layoutY="321.0" prefHeight="45.0" prefWidth="194.0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <MenuButton layoutY="2.0" mnemonicParsing="false" text="Kolor tla">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#setGreen" text="Zielony" />
+                <MenuItem mnemonicParsing="false" onAction="#setBlue" text="Niebieski" />
+                <MenuItem mnemonicParsing="false" onAction="#setStandard" text="Standard" />
+            </items>
+        </MenuButton>
+        <MenuButton layoutX="76.0" layoutY="2.0" mnemonicParsing="false" text="Kolor czcionki">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#setcRed" text="Czerwony" />
+                <MenuItem mnemonicParsing="false" onAction="#setcYellow" text="Zolty" />
+                <MenuItem mnemonicParsing="false" onAction="#setStandard2" text="Standard" />
+            </items>
+        </MenuButton>
+    </children>
+</Pane>
